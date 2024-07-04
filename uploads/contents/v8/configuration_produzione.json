@@ -1,0 +1,26 @@
+{
+    "server_base_url": "https://www.nomapalermo.com/contents/",
+    "opengl_renderer_low": [
+    "Adreno (TM) 200",
+    "Adreno (TM) 203",
+    "Adreno 205",
+    "Adreno (TM) 220",
+    "Adreno (TM) 304",
+    "Adreno (TM) 305",
+    "Adreno (TM) 306",
+    "Adreno (TM) 220",
+    "Adreno (TM) 405",
+    "PowerVR SGX 520",
+    "PowerVR SGX 530",
+    "PowerVR SGX 531",
+    "PowerVR SGX 535",
+    "PowerVR SGX 540",
+    "PowerVR SGX 543",
+    "PowerVR SGX 544",
+    "PowerVR SGX 545",
+    "PowerVR SGX 554",
+    "Mali-55",
+    "Mali-200",
+    "Mali-300"
+  ]
+}

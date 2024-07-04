@@ -1,0 +1,6 @@
+{
+    "require": {
+        "twilio/sdk": "^5.42",
+        "aws/aws-sdk-php": "^3.136"
+    }
+}

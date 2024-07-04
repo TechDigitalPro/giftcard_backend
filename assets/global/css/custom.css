@@ -1,0 +1,11 @@
+td .td-img-sm{
+    width: 40px;
+    height: auto;
+}
+td .td-img-md{
+    width: 80px;
+    height: auto;
+}
+table.dataTable > tbody > tr > td{
+    padding: 10px 5px !important;
+}

@@ -1,0 +1,1 @@
+/usr/bin/php -q /var/www/html/zimbo/cron/index.php

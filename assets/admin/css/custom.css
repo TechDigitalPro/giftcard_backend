@@ -1,0 +1,216 @@
+.checkbox label, .radio label, label, .label-on-left, .label-on-right {
+    color: #111111;
+    font-size: 16px;
+}
+.form-control, .form-group .form-control {
+    color: #111111;
+    font-size: 16px;   
+}
+.form-group .checkbox label, .form-group .radio label, .form-group label, .form-group .label-on-left, .form-group .label-on-right {
+    color: #111111;
+    font-size: 16px;   
+}
+.material-datatables{
+    overflow: auto;
+}
+.container-fluid {
+    padding-top: 30px;
+}
+.form-control {
+    height: 40px !important;
+}
+.navbar > .container-fluid .navbar-brand {
+    color: #111111;
+    font-size: 20px;
+}
+.card .card-content .category {
+    color: #111111;
+    font-size: 17px;
+}
+@media (min-width: 992px){
+    .d-padding-right-10{
+        padding-right: 10px !important;
+    }
+    .d-padding-right-20{
+        padding-right: 20px !important;
+    }
+    .d-padding-right-30{
+        padding-right: 30px !important;
+    }
+    .d-padding-right-40{
+        padding-right: 40px !important;
+    }
+    .d-padding-right-60{
+        padding-right: 60px !important;
+    }
+    .d-padding-left-10{
+        padding-left: 10px !important;
+    }
+    .d-padding-left-20{
+        padding-left: 20px !important;
+    }
+    .d-padding-left-30{
+        padding-left: 30px !important;
+    }
+    .d-padding-left-40{
+        padding-left: 40px !important;
+    }
+    .d-padding-left-60{
+        padding-left: 60px !important;
+    }
+    .d-padding-top-10{
+        padding-top: 10px !important;
+    }
+    .d-padding-top-20{
+        padding-top: 20px !important;
+    }
+    .d-padding-top-30{
+        padding-top: 30px !important;
+    }
+    .d-padding-top-40{
+        padding-top: 40px !important;
+    }
+    .d-padding-top-60{
+        padding-top: 60px !important;
+    }
+    .d-padding-bottom-10{
+        padding-bottom: 10px !important;
+    }
+    .d-padding-bottom-20{
+        padding-bottom: 20px !important;
+    }
+    .d-padding-bottom-30{
+        padding-bottom: 30px !important;
+    }
+    .d-padding-bottom-40{
+        padding-bottom: 40px !important;
+    }
+    .d-padding-bottom-60{
+        padding-bottom: 60px !important;
+    }
+    .d-margin-right-10{
+        margin-right: 10px !important;
+    }
+    .d-margin-right-20{
+        margin-right: 20px !important;
+    }
+    .d-margin-right-30{
+        margin-right: 30px !important;
+    }
+    .d-margin-right-40{
+        margin-right: 40px !important;
+    }
+    .d-margin-right-60{
+        margin-right: 60px !important;
+    }
+    .d-margin-left-10{
+        margin-left: 10px !important;
+    }
+    .d-margin-left-20{
+        margin-left: 20px !important;
+    }
+    .d-margin-left-30{
+        margin-left: 30px !important;
+    }
+    .d-margin-left-40{
+        margin-left: 40px !important;
+    }
+    .d-margin-left-60{
+        margin-left: 60px !important;
+    }
+    .d-margin-top-10{
+        margin-top: 10px !important;
+    }
+    .d-margin-top-20{
+        margin-top: 20px !important;
+    }
+    .d-margin-top-30{
+        margin-top: 30px !important;
+    }
+    .d-margin-top-40{
+        margin-top: 40px !important;
+    }
+    .d-margin-top-60{
+        margin-top: 60px !important;
+    }
+    .d-margin-bottom-10{
+        margin-bottom: 10px !important;
+    }
+    .d-margin-bottom-20{
+        margin-bottom: 20px !important;
+    }
+    .d-margin-bottom-30{
+        margin-bottom: 30px !important;
+    }
+    .d-margin-bottom-40{
+        margin-bottom: 40px !important;
+    }
+    .d-margin-bottom-60{
+        margin-bottom: 60px !important;
+    }
+}
+
+div,span,a,li,th,b,em,h1,h2,h3,h4,h5,p,button {
+    /*text-transform: uppercase;*/
+}
+td{
+    text-transform: none;
+}
+.btn{
+    font-size: 14px;
+}
+.jconfirm .jconfirm-box .jconfirm-buttons button.btn-blue{
+    background-color: #1670da;
+}
+.padding-0{
+    padding: 0 !important;
+}
+.padding-5{
+    padding: 5px !important;
+}
+.padding-10{
+    padding: 10px !important;
+}
+.padding-15{
+    padding: 15px !important;
+}
+.padding-20{
+    padding: 20px !important;
+}
+.padding-30{
+    padding: 30px !important;
+}
+
+.top-user-name-status{
+    font-size: 16px;
+}
+.top-user-name-status span{
+    margin: 0 3px;
+}
+.top-user-name-status .hi-text{
+    color: #999;
+}
+.top-user-name-status .rank-text{
+    color: #0cc30f;
+    background: #eeffee;
+    padding: 5px 5px;
+    border-radius: 4px;
+}
+.search-item-box {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    padding: 0 5px;
+}
+.main-panel > .content {
+    padding-top: 10px;
+}
+.sublink-btn-group .btn{
+    padding: 7px 20px;
+    border-radius: 20px;
+}
+.btn-connect-uphold{
+    width: 200px;
+    display: inline-block;
+}

@@ -1,0 +1,690 @@
+{
+    "cube_rotations": {
+        "texture0": {
+            "rotationX": 0,
+            "rotationY": 105
+        }
+    },
+    "cube_textures": {
+        "texture0": "FranceseCubo6.1_1024.zip"
+    },
+    "cube_textures_low": {
+        "texture0": "FranceseCuboLow6.1.zip"
+    },
+    "steps": [
+        {
+            "audios": [
+                {
+                    "delayedStart": 0,
+                    "id": "audio1",
+                    "interactive": "true",
+                    "position": {
+                        "hp": 0.1,
+                        "wp": 0.1328,
+                        "x": 5,
+                        "y": 5
+                    },
+                    "stream": "false",
+                    "subtitles": "FranceseScriptAudioSubtitle3.1",
+                    "url": "FranceseScriptAudio2.1.mp3"
+                }
+            ],
+            "cube_texture": "texture0",
+            "id": "step0",
+            "local": "true",
+            "minShowTime": 1,
+            "next": "menu",
+            "overlay": {
+                "alpha": 0.5
+            },
+            "stepDescription": "Step Audio1.1",
+            "titleBox": {
+                "duration": 4,
+                "main_text": "Locale-CoverTitle",
+                "sub_text": "Locale-CoverSubtitle",
+                "url": "FranceseFotoCopertina2.1.jpg"
+            },
+            "type": 0
+        },
+        {
+            "cube_texture": "texture0",
+            "id": "menu",
+            "items": [
+                {
+                    "hr_name": "Locale-MenuMurder",
+                    "id": "item1",
+                    "menu_type": 0,
+                    "menu_type_name": "Dinamica dell'attentato",
+                    "step_id": "step2"
+                },
+                {
+                    "hr_name": "Locale-MenuThePlace",
+                    "id": "item6",
+                    "menu_type": 4,
+                    "menu_type_name": "Guardati intorno",
+                    "step_id": "step6"
+                },
+                {
+                    "hr_name": "Locale-MenuPhotos",
+                    "id": "item3",
+                    "menu_type": 1,
+                    "menu_type_name": "Foto e video",
+                    "step_id": "step7"
+                },
+                {
+                    "hr_name": "Locale-MenuFamily",
+                    "id": "item4",
+                    "menu_type": 2,
+                    "menu_type_name": "Intervista",
+                    "step_id": "step8"
+                },                
+                {
+                    "hr_name": "Locale-MenuBio",
+                    "id": "item2",
+                    "menu_type": 3,
+                    "menu_type_name": "Biografia",
+                    "step_id": "step5"
+                },
+                {
+                    "debug": "true",
+                    "hr_name": "AR Test - Animazione 1.1",
+                    "id": "item2",
+                    "step_id": "step3.1"
+                }
+            ],
+            "overlay": {
+                "alpha": 0.5
+            },
+            "stepDescription": "Step Menu",
+            "type": 4
+        },
+        {
+            "audios": [
+                {
+                    "delayedStart": 0,
+                    "id": "audio1",
+                    "position": {
+                        "hp": 0.1,
+                        "wp": 0.1328,
+                        "x": 5,
+                        "y": 5
+                    },
+                    "stream": "false",
+                    "subtitles": "FranceseScriptAudioSubtitle3.6",
+                    "url": "FranceseScriptAudio2.6.mp3"
+                }
+            ],
+            "cube_texture": "texture0",
+            "id": "step2",
+            "minShowTime": 10,
+            "next": "step3.1",
+            "overlay": {
+                "alpha": 0,
+                "animation": {
+                    "alpha": 0.5,
+                    "duration": 1,
+                    "type": "easeinout"
+                }
+            },
+            "slideshow": {
+                "baseContent": "audio1",
+                "media": [
+                	{
+                        "alpha": 1,
+                        "animation": {
+                            "duration": 4,
+                            "type": "easeinout",
+                            "wp": 0.25,
+                            "xp": 0.5,
+                            "yp": 0.5
+                        },
+                        "delayedStart": 0,
+                        "duration": 4,
+                        "fadeinDuration": 1,
+                        "fadeoutDuration": 1.5,
+                        "id": "ssimage6",
+                        "position": {
+                            "wp": 0.3,
+                            "xp": 0.5,
+                            "yp": 0.5
+                        },
+                        "rotation": 0,
+                        "type": "image",
+                        "url": "FranceseFotoStoria1.2.png"
+                    },
+                    {
+                        "alpha": 1,
+                        "delayedStart": 3,
+                        "duration": 5,
+                        "fadeinDuration": 3,
+                        "fadeoutDuration": 2,
+                        "id": "ssimage0",
+                        "placeholder": "#FFFFFF",
+                        "position": {
+                            "wp": 0.4,
+                            "xp": 0.5,
+                            "yp": 0.5
+                        },
+                        "rotation": -7,
+                        "shadow": "true",
+                        "type": "image",
+                        "url": "FranceseFotoStoria1.1.jpg"
+                    },
+                    {
+                        "alpha": 1,
+                        "animation": {
+                            "duration": 10,
+                            "type": "linear",
+                            "wp": 0.9,
+                            "xp": 1.5,
+                            "yp": 0.5
+                        },
+                        "delayedStart": 7,
+                        "duration": 8,
+                        "fadeinDuration": 0,
+                        "fadeoutDuration": 5,
+                        "id": "ssimage1",
+                        "placeholder": "#FFFFFF",
+                        "position": {
+                            "wp": 0.9,
+                            "xp": 0.5,
+                            "yp": 0.5
+                        },
+                        "rotation": 0,
+                        "shadow": "true",
+                        "type": "image",
+                        "url": "FranceseFumetto1.1.jpg"
+                    }
+                ]
+            },
+            "type": 0
+        },
+        {
+            "audios": [
+                {
+                    "delayedStart": 0,
+                    "id": "audio1",
+                    "stream": "false",
+                    "url": "FranceseScriptAudio2.4.mp3"
+                }
+            ],
+            "cube_texture": "texture0",
+            "helpBox": {
+                "ar_help_text": "Locale-ARHelpText1.1",
+                "cube_help_text": "Locale-CubeHelpText1.1"
+            },
+            "id": "step3.1",
+            "next": "step4",
+            "type": 0
+        },
+        {
+            "audios": [
+                {
+                    "delayedStart": 0,
+                    "depends_on": [
+                        "video1"
+                    ],
+                    "id": "audio4",
+                    "stream": "false",
+                    "url": "FranceseAnimAudio4.1.mp3",
+                    "volume": 0.1
+                },
+                {
+                    "delayedStart": 0,
+                    "depends_on": [
+                        "video1"
+                    ],
+                    "id": "audio1",
+                    "position": {
+                        "hp": 0.1,
+                        "wp": 0.1328,
+                        "x": 5,
+                        "y": 5
+                    },
+                    "stream": "false",
+                    "subtitles": "FranceseScriptAudioSubtitle3.8",
+                    "url": "FranceseScriptAudio2.8.mp3"
+                }
+            ],
+            "cube_texture": "texture0",
+            "helpBox": {
+                "ar_help_text": "Locale-ARHelpText1.1",
+                "cube_help_text": "Locale-CubeHelpText1.1"
+            },
+            "id": "step4",
+            "local": "true",
+            "minShowTime": 1,
+            "next": "step4.1",
+            "type": 1,
+            "videos": [
+                {
+                    "alpha": 1,
+                    "cube_position": {
+                        "pitch": 0,
+                        "pitch_fov": 360,
+                        "yaw": 165,
+                        "yaw_fov": 40
+                    },
+                    "delayedStart": 0,
+                    "frame": {
+                        "scale": 0.78,
+                        "translateX": 4.8,
+                        "translateY": 0.9
+                    },
+                    "id": "video1",
+                    "metaio_frame": {
+                        "3dslam-1.0": {
+                            "rotation": {
+                                "x": 1.64,
+                                "y": 1.52,
+                                "z": 0
+                            },
+                            "scale": 3.94,
+                            "translate": {
+                                "x": 110.53,
+                                "y": 0,
+                                "z": 105
+                            }
+                        }
+                    },
+                    "stream": "false",
+                    "url": "FranceseAnimazioneHigh5.1.3g2",
+                    "url_low": "FranceseAnimazioneLow5.1.3g2"
+                }
+            ]
+        },
+        {
+            "blocking": {
+                "enabled": "true",
+                "next_text": "StoriesActionGoToMenu",
+                "overlay": {
+                    "alpha": 0.5
+                },
+                "previous_text": "StoriesActionWatchAgain"
+            },
+            "cube_texture": "texture0",
+            "id": "step4.1",
+            "minShowTime": 2,
+            "next": "menu",
+            "overlay": {
+                "alpha": 0.5,
+                "animation": {
+                    "alpha": 0,
+                    "duration": 1,
+                    "type": "easeinout"
+                }
+            },
+            "previous": "step3.1",
+            "slideshow": {
+                "baseContent": "",
+                "media": [
+                    {
+                        "alpha": 1,
+                        "delayedStart": 0,
+                        "duration": 101,
+                        "fadeinDuration": 1,
+                        "fadeoutDuration": 1,
+                        "id": "video1",
+                        "position": {
+                            "h": 470,
+                            "w": 600,
+                            "wp": 0.6,
+                            "xp": 0.5,
+                            "yp": 0.5
+                        },
+                        "rotation": 0,
+                        "shadow": "true",
+                        "showProgress": "true",
+                        "skip": "true",
+                        "stream": "false",
+                        "type": "video",
+                        "url": "FranceseVideoTG2.1.mp4"
+                    }
+                ]
+            },
+            "type": 0
+        },
+        {
+            "audios": [
+                {
+                    "id": "audio1",
+                    "stream": "false",
+                    "subtitles": "FranceseBioAudioSubtitle3.1",
+                    "url": "FranceseBioAudio3.1.mp3"
+                }
+            ],
+            "cube_texture": "texture0",
+            "id": "step5",
+            "next": "menu",
+            "overlay": {
+                "alpha": 0.5
+            },
+            "slideshow": {
+                "baseContent": "audio1",
+                "media": [
+                    {
+                        "alpha": 1,
+                        "delayedStart": 0,
+                        "duration": 4,
+                        "fadeinDuration": 1,
+                        "fadeoutDuration": 1,
+                        "id": "ssimage1",
+                        "placeholder": "#FFFFFF",
+                        "position": {
+                            "wp": 0.3,
+                            "xp": 0.35,
+                            "yp": 0.5
+                        },
+                        "rotation": 10,
+                        "shadow": "true",
+                        "type": "image",
+                        "url": "FranceseFotoBio1.1.jpg"
+                    },
+                    {
+                        "alpha": 1,
+                        "delayedStart": 4,
+                        "duration": 8,
+                        "fadeinDuration": 1,
+                        "fadeoutDuration": 1,
+                        "id": "ssimage2",
+                        "placeholder": "#FFFFFF",
+                        "position": {
+                            "wp": 0.4,
+                            "xp": 0.7,
+                            "yp": 0.35
+                        },
+                        "rotation": -6,
+                        "shadow": "true",
+                        "type": "image",
+                        "url": "FranceseFotoBio1.2.jpg"
+                    },
+                    {
+                        "alpha": 1,
+                        "delayedStart": 12,
+                        "duration": 5,
+                        "fadeinDuration": 1,
+                        "fadeoutDuration": 1,
+                        "id": "ssimage3",
+                        "placeholder": "#FFFFFF",
+                        "position": {
+                            "wp": 0.4,
+                            "xp": 0.4,
+                            "yp": 0.55
+                        },
+                        "rotation": 7,
+                        "shadow": "true",
+                        "type": "image",
+                        "url": "FranceseFotoBio1.3.jpg"
+                    },
+                    {
+                        "alpha": 1,
+                        "delayedStart": 17,
+                        "duration": 7,
+                        "fadeinDuration": 1,
+                        "fadeoutDuration": 1,
+                        "id": "ssimage4",
+                        "placeholder": "#FFFFFF",
+                        "position": {
+                            "wp": 0.4,
+                            "xp": 0.65,
+                            "yp": 0.65
+                        },
+                        "rotation": -8,
+                        "shadow": "true",
+                        "type": "image",
+                        "url": "FranceseFotoBio1.4.jpg"
+                    },
+                    {
+                        "alpha": 1,
+                        "delayedStart": 24,
+                        "duration": 11,
+                        "fadeinDuration": 1,
+                        "fadeoutDuration": 1,
+                        "id": "ssimage5",
+                        "placeholder": "#FFFFFF",
+                        "position": {
+                            "wp": 0.4,
+                            "xp": 0.3,
+                            "yp": 0.5
+                        },
+                        "rotation": 12,
+                        "shadow": "true",
+                        "type": "image",
+                        "url": "FranceseFotoBio1.5.jpg"
+                    },
+                    {
+                        "alpha": 1,
+                        "delayedStart": 26,
+                        "duration": 11,
+                        "fadeinDuration": 1,
+                        "fadeoutDuration": 1,
+                        "id": "ssimage14",
+                        "placeholder": "#FFFFFF",
+                        "position": {
+                            "wp": 0.4,
+                            "xp": 0.6,
+                            "yp": 0.5
+                        },
+                        "rotation": -10,
+                        "shadow": "true",
+                        "type": "image",
+                        "url": "FranceseGalleriaFoto3.14.jpg"
+                    },
+                    {
+                        "alpha": 1,
+                        "delayedStart": 35,
+                        "duration": 15,
+                        "fadeinDuration": 1,
+                        "fadeoutDuration": 1,
+                        "id": "ssimage6",
+                        "placeholder": "#FFFFFF",
+                        "position": {
+                            "wp": 0.4,
+                            "xp": 0.35,
+                            "yp": 0.4
+                        },
+                        "rotation": -10,
+                        "shadow": "true",
+                        "type": "image",
+                        "url": "FranceseFotoBio1.6.jpg"
+                    },
+                    {
+                        "alpha": 1,
+                        "delayedStart": 45,
+                        "duration": 5,
+                        "fadeinDuration": 1,
+                        "fadeoutDuration": 1,
+                        "id": "ssvideo6",
+                        "position": {
+                            "h": 390,
+                            "w": 480,
+                            "wp": 0.5,
+                            "xp": 0.6,
+                            "yp": 0.65
+                        },
+                        "rotation": 7,
+                        "shadow": "true",
+                        "type": "video",
+                        "url": "FranceseVideoBio1.1.mp4"
+                    }                    
+                ]
+            },
+            "type": 0
+        },
+        {
+            "cube_texture": "texture0",
+            "hotspots": [
+                {
+                    "id": "hotspot1",
+                    "image": "FranceseCommemorativePlaqueFoto1.1.jpg",
+                    "pitch": -2,
+                    "position": "left",
+                    "suggestedSize": {
+                        "wp": 0.8
+                    },
+                    "yaw": -9
+                },
+                {
+                    "id": "hotspot2",
+                    "image": "FranceseCommemorativePlaqueFoto1.2.jpg",
+                    "pitch": -9,
+                    "position": "right",
+                    "suggestedSize": {
+                        "wp": 0.8
+                    },
+                    "yaw": 5
+                }
+            ],
+            "id": "step6",
+            "next": "menu",
+            "overlay": {
+                "alpha": 0,
+                "animation": {
+                    "alpha": 0.5,
+                    "duration": 1,
+                    "type": "easeinout"
+                }
+            },
+            "type": 8
+        },
+        {
+            "cube_texture": "texture0",
+            "id": "step7",
+            "items": [
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.1.jpg",
+                    "type": "image",
+                    "url": "FranceseGalleriaFoto3.1.jpg",
+                    "caption": "FranceseGalleriaFotoCaption3.1"
+                },
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.2.jpg",
+                    "type": "image",
+                    "url": "FranceseGalleriaFoto3.2.jpg",
+                    "caption": "FranceseGalleriaFotoCaption3.2"
+                },
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.3.jpg",
+                    "type": "image",
+                    "url": "FranceseGalleriaFoto3.3.jpg",
+                    "caption": "FranceseGalleriaFotoCaption3.3"
+                },
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.4.jpg",
+                    "type": "image",
+                    "url": "FranceseGalleriaFoto3.4.jpg",
+                    "caption": "FranceseGalleriaFotoCaption3.4"
+                },
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.5.jpg",
+                    "type": "image",
+                    "url": "FranceseGalleriaFoto3.5.jpg",
+                    "caption": "FranceseGalleriaFotoCaption3.5"
+                },
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.6.jpg",
+                    "type": "image",
+                    "url": "FranceseGalleriaFoto3.6.jpg",
+                    "caption": "FranceseGalleriaFotoCaption3.6"
+                },
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.7.jpg",
+                    "type": "image",
+                    "url": "FranceseGalleriaFoto3.7.jpg",
+                    "caption": "FranceseGalleriaFotoCaption3.7"
+                },
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.8.jpg",
+                    "type": "image",
+                    "url": "FranceseGalleriaFoto3.8.jpg",
+                    "caption": "FranceseGalleriaFotoCaption3.8"
+                },
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.9.jpg",
+                    "type": "image",
+                    "url": "FranceseGalleriaFoto3.9.jpg",
+                    "caption": "FranceseGalleriaFotoCaption3.9"
+                },
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.10.jpg",
+                    "type": "image",
+                    "url": "FranceseGalleriaFoto3.10.jpg",
+                    "caption": "FranceseGalleriaFotoCaption3.10"
+                },
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.14.jpg",
+                    "type": "image",
+                    "url": "FranceseGalleriaFoto3.14.jpg",
+                    "caption": "FranceseGalleriaFotoCaption3.14"
+                },                
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.11.jpg",
+                    "type": "image",
+                    "url": "FranceseGalleriaFoto3.11.jpg",
+                    "caption": "FranceseGalleriaFotoCaption3.11"
+                },
+                {
+                    "thumb": "FranceseCommemorativePlaqueFotoThumb1.1.jpg",
+                    "type": "image",
+                    "url": "FranceseCommemorativePlaqueFoto1.1.jpg"
+                }, 
+                {
+                    "thumb": "FranceseCommemorativePlaqueFotoThumb1.3.jpg",
+                    "type": "image",
+                    "url": "FranceseCommemorativePlaqueFoto1.3.jpg"
+                },                 
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.15.jpg",
+                    "type": "video",
+                    "url": "FranceseGalleriaFoto3.15.jpg",
+                    "video_url": "FranceseVideoTG2.1.mp4"
+                }, 
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.12.jpg",
+                    "type": "image",
+                    "url": "FranceseGalleriaFoto3.12.jpg",
+                    "caption": "FranceseGalleriaFotoCaption3.12"
+                },
+                {
+                    "thumb": "FranceseGalleriaFotoThumb3.13.jpg",
+                    "type": "image",
+                    "url": "FranceseGalleriaFoto3.13.jpg",
+                    "caption": "FranceseGalleriaFotoCaption3.13"
+                }                
+            ],
+            "type": 3
+        },
+        {
+            "cube_texture": "texture0",
+            "id": "step8",
+            "minShowTime": 1,
+            "next": "menu",
+            "type": 6,
+            "videos": [
+                {
+                    "id": "video3",
+                    "position": {
+                        "hp": 0.5,
+                        "wp": 0.5,
+                        "x": 5,
+                        "y": 5
+                    },
+                    "stream": "true",
+                    "subtitles": "FranceseFamilyAudioSubtitle2.1",
+                    "url": "FranceseFamilyVideoiOS",
+                    "url_android": "FranceseFamilyVideoAndroid"
+                }
+            ]
+        }
+    ],
+    "supported_languages": {
+        "en": {
+            "url": "francese.en"
+        },
+        "it": {
+            "url": "francese.it"
+        }
+    },
+    "visual_dataset": "50",
+    "visual_url": "http://sand-vissearch-buildit.elasticbeanstalk.com/v1/dataset/searchImg"
+}

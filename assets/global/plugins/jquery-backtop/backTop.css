@@ -1,0 +1,82 @@
+/*Main stylesheet for Backtop jQuery Plugin */
+#backTop{
+    width:35px;
+    height:35px;
+    padding:10px;
+    border-radius:4px;
+    text-indent:-9999px;
+    cursor:pointer;
+    z-index:999999999;
+	display:none;
+	box-sizing:content-box;
+	-webkit-box-sizing:content-box;
+}
+#backTop.white{
+    background: url(backtopup.png) no-repeat center center;
+    width: 40px;
+    height: 40px;
+    bottom: 70px;
+    right: 8px;
+    background-color: rgba(243, 241, 241, 0.5);
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    background-size: contain;
+    text-indent: initial;
+    text-align: center;
+    line-height: 65px;
+    padding: 2px;
+    opacity: 0.7;
+    font-size: 12px;
+}
+#backTop.black{
+    background: url(backtopup.png) no-repeat center center;
+    width: 40px;
+    height: 40px;
+    bottom: 70px;
+    right: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    background-size: contain;
+    text-indent: initial;
+    text-align: center;
+    line-height: 65px;
+    padding: 2px;
+    opacity: 0.7;
+    font-size: 12px;
+}
+#backTop.red{
+    background: url(backtopup.png) no-repeat center center;
+    width: 40px;
+    height: 40px;
+    bottom: 70px;
+    right: 8px;
+    background-color: rgba(243, 0, 0, 0.5);
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    background-size: contain;
+    text-indent: initial;
+    text-align: center;
+    line-height: 65px;
+    padding: 2px;
+    opacity: 0.7;
+    font-size: 12px;
+}
+#backTop.green{
+    background: url(backtopup.png) no-repeat center center;
+    width: 40px;
+    height: 40px;
+    bottom: 70px;
+    right: 8px;
+    background-color: rgba(81,217,187,0.9);
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    background-size: contain;
+    text-indent: initial;
+    text-align: center;
+    line-height: 65px;
+    padding: 2px;
+    opacity: 0.7;
+    font-size: 12px;
+}
+

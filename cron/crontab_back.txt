@@ -1,0 +1,4 @@
+* 0,12 * * * /var/www/html/zimbo/cron/cron.sh
+0 0 * * * /var/www/html/zimbo_test/cron/cron.sh      ///every day
+*/10 * * * * /var/www/html/zimbo/cron/cron.sh   ///every 10min
+* * * * * /usr/bin/sh /var/www/html/zimbo/cron/cron.sh   ///every minute

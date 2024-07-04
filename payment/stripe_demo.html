@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credit Card</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        iframe{
+            top: 5vh !important;
+            height: 90vh !important;
+        }
+        iframe + div{
+            height: 100vh !important;
+        }
+
+    </style>
+</head>
+<body>
+<div class="loading-container">
+    <div class="loading-box">
+        <img class="loading-icon" src='../assets/global/img/loading.gif'>
+        <h3 class="loading-title">Loading</h3>
+        <p class="mt-0 loading-desc">Please wait for a few seconds...</p>
+    </div>
+</div>
+<!--<script src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key="pk_Fhlzwtm9SCx6Uxww5fNXX8CUbwwAc"
+        data-amount="2000"
+        data-name="Demo Site"
+        data-description="2 widgets ($20.00)"
+        data-image="/128x128.png">
+</script>-->
+<!------------------------------------------------------------------------>
+<script src="./jquery-3.1.1.min.js"></script>
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<button id="customButton" class="visibility-hidden">Purchase</button>
+<script>
+    var stripe_token = "";
+    var stripe_email = "";
+    var stripe_client_ip = "";
+    var handler = StripeCheckout.configure({
+        key: 'pk_test_51KDyzdAJErSwMoxLWEcZxAFUMBxUoZzhIWKUgH1KUjOXn2Bvi2gNRRqGrCLZ83bzZCdL6y41154amCffitmLQFMk00QSvuF3Ml',/*'pk_test_6pRNASCoBOKtIshFeQd4XMUh',*/
+        image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+        locale: 'auto',
+        allowRememberMe: false,
+        token: function(token) {
+            // You can access the token ID with `token.id`.
+            // Get the token ID to your server-side code for use.
+            console.log(token);
+            console.log("Token created: " + token.id);
+            stripe_token = token.id;
+            stripe_email = token.email;
+            stripe_client_ip = token.client_ip;
+        },
+        opened: function() {
+            console.log("Form opened");
+            $(".loading-container").addClass("visibility-hidden");
+        },
+        closed: function() {
+            console.log("Form closed");
+            //$(".loading-container").removeClass("visibility-hidden");
+            if(stripe_token !==""){
+                window.location.href = "___stripe_process_url___"+"&token="+stripe_token+"&email="+encodeURI(stripe_email)+"&client_ip="+encodeURI(stripe_client_ip);
+            }else{
+                window.location.href = "___stripe_cancel_url___";
+            }
+        }
+    });
+
+    $('#customButton').on('click', function(e) {
+        // Open Checkout with further options:
+        var amount = "___payment_amount___";
+        handler.open({
+            name: 'Credit Card',
+            description: 'Zimbo',
+            amount: parseInt(amount)/*2000*/
+        });
+        e.preventDefault();
+    });
+
+    // Close Checkout on page navigation:
+    $(window).on('popstate', function() {
+        handler.close();
+    });
+
+    $(document).ready(function(){
+        $('#customButton').trigger('click');
+    });
+
+</script>
+</body>
+</html>

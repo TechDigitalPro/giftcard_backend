@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="209.188.21.120" id="1cabf89c-2e30-4408-b8b0-55771f79774d" port="22" customName="NOMA" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="NOMA" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="209.188.21.120" id="9969ce6b-9882-4570-87f1-641b80badaf0" port="22" customName="NOMA" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="NOMA" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="209.188.21.120" id="2ec4c3ce-aafd-4867-ab27-c29dfd0c3b77" port="22" customName="NOMA" nameFormat="CUSTOM">
+        <option name="customName" value="NOMA" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

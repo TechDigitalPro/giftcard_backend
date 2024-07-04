@@ -1,0 +1,338 @@
+@media (max-width: 991px){
+    .t-show-desktop{
+        display: none !important;
+    }
+    .loading-overlayer .loading-wrapper{
+        margin-top:calc(50vh - 80px) !important;
+    }
+    .sidebar .logo a img{
+        width: 200px;
+        height: auto;
+        margin: 24px 0;
+    }
+    .sidebar .logo{
+        padding: 0;
+    }
+    .sidebar .logo a{
+        padding: 0 !important;
+    }
+    .sidebar .sidebar-wrapper, .off-canvas-sidebar .sidebar-wrapper{
+        position: relative;
+        height: calc(100vh - 100px);
+        overflow: auto;
+        width: 260px;
+        z-index: 4;
+        padding-bottom: 30px;
+    }
+
+    .sidebar .nav, .off-canvas-sidebar .nav{
+        margin-top: 50px;
+    }
+    /*
+    .sidebar-content{
+        display: table;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .vertical-middle-content{
+        display: table-cell;
+        vertical-align: middle;
+    }*/
+    .btn-copy-text{
+        position: absolute;
+        right: 5px;
+        bottom: 15px;
+        padding: 2px 6px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    input#referral_url{
+        padding-right: 100px;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+
+    /*MLM TREE STYLE*/
+    .mlm-tree-box{
+        display: block;
+        position: relative;
+        overflow-x: auto;
+    }
+    .main-tree-box{
+        display: block;
+        position: relative;
+        float: left;
+        width: 33.333333%;
+        text-align: center;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .main-tree-box:before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        height: 20px;
+        width: 1px;
+        background: #ccc;
+    }
+    .main-tree-box.main-tree-box-0{
+        display: block;
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+    .main-tree-box.main-tree-box-0:before{
+        display: none;
+    }
+    .tree-user-info-box{
+        display: block;
+        position: relative;
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+        box-sizing: border-box;
+    }
+    .tree-user-info-box:before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        height: 26px;
+        width: 1px;
+        background: #ccc;
+    }
+    .tree-user-info-box.last-tree-user:before{
+        display: none;
+    }
+    .tree-user-info-box:after{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 16.6666%;
+        right: 16.6666%;
+        bottom: 0;
+        height: 1px;
+        background: #ccc;
+    }
+    .tree-user-info-box.last-tree-user:after{
+        display: none;
+    }
+
+    .tree-child-container {
+        display: block;
+        position: relative;
+        clear: both;
+    }
+    .tree-child-container:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .tree-user-name {
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .user-info-wrapper{
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+    }
+    .user-avatar-wrapper .user-avatar-box{
+        display: inline-block;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 2px solid #0a7bff;
+        border-radius: 500px;
+    }
+    .empty-user-wrapper .user-avatar-wrapper .user-avatar-box{
+        border: 2px solid #ff5e5e;
+    }
+    .user-avatar-wrapper .user-avatar-box img{
+        width: 40px;
+        height: 40px;
+    }
+    .user-name-wrapper{
+        margin-top: -10px;
+    }
+    .user-name-wrapper .user-name-box{
+        display: inline-block;
+        padding: 2px 6px;
+        box-sizing: border-box;
+        border: 2px solid #0a7bff;
+        background: #fff;
+        width: 80px;
+        font-size: 12px;
+        border-radius: 2px;
+        background: #0a7bff;
+        color: #fff;
+    }
+    .empty-user-wrapper .user-name-wrapper .user-name-box{
+        border: 2px solid #ff5e5e;
+        background: #ff5e5e;
+        color: #fff;
+    }
+    .user-info-wrapper .btn-show-more-wrapper{
+        display: block;
+        position: absolute;
+        right: -10px;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        background: #ff5e5e;
+        border-radius: 100px;
+    }
+    .referral-link-label{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .user-profile-dlg{
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .dlg-user-avatar-box{
+        display: inline-block;
+        text-align: center;
+    }
+    .dlg-user-avatar{
+        width: 100px;
+        height: auto;
+    }
+    .dlg-info-label{
+        display: block;
+        text-align: left;
+        word-break: break-all;
+        margin: 0;
+        margin-top: 2px;
+    }
+    .dlg-user-info-txt{
+        text-align: left;
+        word-break: break-all;
+    }
+    .dlg-user-table-box{
+        width: calc(100vw - 100px);
+    }
+    .dlg-user-table-box .table > thead > tr > th, .dlg-user-table-box .table > tbody > tr > td{
+        font-size: 16px;
+        text-align: center;
+        padding: 18px 8px;
+    }
+    .dlg-user-table-box .table > tbody > tr > td{
+        cursor: pointer;
+    }
+    .dlg-user-table-box .table > tbody > tr > td img{
+        width: 40px;
+        height: auto;
+    }
+    .card-content iframe{
+        width: 100%;
+        height: auto;
+    }
+    .parse-list{
+        /*   padding-top: 20px;*/
+    }
+    .parse-box{
+        padding: 10px;
+    }
+    .parse-box .item-list-box{
+        font-size: 18px;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+    .parse-box .item-list-box .parse-item{
+        padding: 0.375em 1em;
+    }
+    .card .parse-title{
+
+    }
+    .card img.parse-img-responsive{
+        width: 50px;
+        height: auto;
+        display: inline-block;
+    }
+    .card .parse-title span{
+        font-size: 20px;
+        text-decoration: underline;
+        vertical-align: middle;
+    }
+    .license-ad-item{
+        width: 100%;
+        float: none;
+    }
+    .license-ad-icon{
+        padding: 30px !important;
+    }
+    .logo-wrapper-vps img{
+        width: 270px;
+        height: auto;
+    }
+    .vps-title{
+        font-size: 30px;
+        line-height: 2em;
+        color: #000;
+        word-break: break-all;
+    }
+    .vps-description-wrapper{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 200px;
+    }
+    .vps-description{
+        color: #fff;
+        font-size: 24px;
+        line-height: 1.2em;
+        width: 100%;
+        word-break: break-all;
+        padding: 20px;
+    }
+    .vps-button-wrapper{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 110px;
+    }
+    .vps-btn{
+        color: #fff !important;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        padding: 10px 30px;
+        background: #006f92;
+        font-size: 22px;
+    }
+    /*--------------*/
+    .affiliate-intro-box{
+        display: block;
+    }
+    .affiliate-intro-box:after{
+        display: block;
+        content: '';
+        box-sizing: border-box;
+        clear: both;
+    }
+    .affiliate-intro-left{
+        width: 100%;
+    }
+    .affiliate-img-box img{
+        width: 100%;
+        height: auto;
+    }
+    .affiliate-intro-right{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .affiliate-desc{
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+}
